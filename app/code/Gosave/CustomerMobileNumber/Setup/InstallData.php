@@ -11,12 +11,11 @@ use Magento\Framework\Setup\ModuleDataSetupInterface;
 
 class InstallData implements InstallDataInterface
 {
-    private $customerSetupFactory;
 
-    public function __construct(CustomerSetupFactory $customerSetupFactory)
-    {
-        $this->customerSetupFactory = $customerSetupFactory;
-    }
+    public function __construct(
+        private CustomerSetupFactory $customerSetupFactory
+    )
+    {}
 
     public function install(ModuleDataSetupInterface $setup, ModuleContextInterface $context)
     {
