@@ -5,7 +5,7 @@ type Mutation {
 }
 
 input CreateCustomerInput @doc(description: "An input object for creating a customer.") {
-    mobileNumber: String @doc(description: "Customer Mobile number")
+    mobileNumber: String! @doc(description: "Customer Mobile number")
 }
 
 type CustomerOutput @doc(description: "Contains details about a newly-created or updated customer.") {
