@@ -1,14 +1,14 @@
 type Mutation {
-    createCustomer(
-        input: CreateCustomerInput! @doc(description: "An input object that defines the customer to be created.")
-    ): CustomerOutput @resolver(class: "\\Gosave\\CustomerMobileNumber\\Model\\Resolver\\CreateAccount")
+    createCustomerByMobile(
+        input: CreateCustomerByMobileInput! @doc(description: "An input object that defines the customer to be created.")
+    ): CustomerByMobileOutput @resolver(class: "\\Gosave\\CustomerMobileNumber\\Model\\Resolver\\CreateAccount")
 }
 
-input CreateCustomerInput @doc(description: "An input object for creating a customer.") {
+input CreateCustomerByMobileInput @doc(description: "An input object for creating a customer.") {
     mobileNumber: String! @doc(description: "Customer Mobile number")
 }
 
-type CustomerOutput @doc(description: "Contains details about a newly-created or updated customer.") {
+type CustomerByMobileOutput @doc(description: "Contains details about a newly-created or updated customer.") {
     customer: Customer! @doc(description: "Customer details after creating or updating a customer.")
 }
 
