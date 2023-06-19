@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * GoSave_Banner
+ *
+ * @category  XML
+ * @package   GoSave\Banner
+ * @author    https://gosave.com.sg
+ * @copyright 2023 Copyright GoSave Pvt Ltd, https://gosave.com.sg/
+ * @license   https://gosave.com.sg/ Private
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <!-- Menu for GoSave -->
+        <add id="GoSave_Banner::gsmenu"
+             title="GoSave"
+             module="GoSave_Banner"
+             sortOrder="50"
+             resource="GoSave_Banner::gsmenu"/>
+        <!-- Menu for Manage Banner -->
+        <add id="GoSave_Banner::manageBanner"
+             title="Manage Banner"
+             module="GoSave_Banner"
+             sortOrder="90"
+             resource="GoSave_Banner::manageBanner"
+             parent="GoSave_Banner::gsmenu"/>
+        <!-- Menu for Banner List -->
+        <add id="GoSave_Banner::bannerList" title="Banners"
+             module="GoSave_Banner"
+             sortOrder="10"
+             action="banner/managebanner/index"
+             resource="GoSave_Banner::bannerList"
+             parent="GoSave_Banner::manageBanner"/>             
+    </menu>
+</config>
