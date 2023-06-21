@@ -2,34 +2,34 @@
 
 declare(strict_types=1);
 /**
- * GoSave_Banner
- * 
+ * Gosave_Banner
+ *
  * PHP Version 8.x
  *
  * @category  PHP
- * @package   GoSave\Banner
- * @author    https://gosave.com.sg
- * @copyright 2023 Copyright GoSave Pvt Ltd, https://gosave.com.sg/
- * @license   https://gosave.com.sg/ Private
+ * @package   Gosave\Banner
+ * @author    https://Gosave.com.sg
+ * @copyright 2023 Copyright Gosave Pvt Ltd, https://Gosave.com.sg/
+ * @license   https://Gosave.com.sg/ Private
  */
 
-namespace GoSave\Banner\Model;
+namespace Gosave\Banner\Model;
 
-use GoSave\Banner\Model\BannerFactory as BannerModelFactory;
+use Gosave\Banner\Model\BannerFactory as BannerModelFactory;
 use Magento\Framework\Exception\CouldNotSaveException;
 use Magento\Framework\Exception\NoSuchEntityException;
-use GoSave\Banner\Api\BannerRepositoryInterface;
-use GoSave\Banner\Model\ResourceModel\BannerFactory as BannerResourceFactory;
-use GoSave\Banner\Model\Banner as BannerModel;
+use Gosave\Banner\Api\BannerRepositoryInterface;
+use Gosave\Banner\Model\ResourceModel\BannerFactory as BannerResourceFactory;
+use Gosave\Banner\Model\Banner as BannerModel;
 
 /**
  * Class BannerRepository
- * GoSave\Banner\Model
+ * Gosave\Banner\Model
  */
 class BannerRepository implements BannerRepositoryInterface
 {
     /**
-     * @var \GoSave\Banner\Model\ResourceModel\Banner
+     * @var \Gosave\Banner\Model\ResourceModel\Banner
      */
     protected $bannerResource;
 

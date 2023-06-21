@@ -12,8 +12,8 @@
 -->
 <schema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:noNamespaceSchemaLocation="urn:magento:framework:Setup/Declaration/Schema/etc/schema.xsd">
-    <!-- Table gs_banner -->
-    <table name="gs_banner" resource="default" engine="innodb"
+    <!-- Table banners -->
+    <table name="banners" resource="default" engine="innodb"
            comment="Banner">
         <column xsi:type="int" name="id" padding="10" unsigned="true" nullable="false" identity="true"
                 comment="Id"/>

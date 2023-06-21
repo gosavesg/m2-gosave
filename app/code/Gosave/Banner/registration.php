@@ -3,7 +3,7 @@
 declare(strict_types=1);
 /**
  * GoSave_Banner
- * 
+ *
  * PHP Version 8.x
  *
  * @category  PHP
@@ -17,6 +17,6 @@ use Magento\Framework\Component\ComponentRegistrar;
 
 ComponentRegistrar::register(
     ComponentRegistrar::MODULE,
-    'GoSave_Banner',
+    'Gosave_Banner',
     __DIR__
 );

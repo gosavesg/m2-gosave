@@ -2,30 +2,30 @@
 
 declare(strict_types=1);
 /**
- * GoSave_Banner
- * 
+ * Gosave_Banner
+ *
  * PHP Version 8.x
  *
  * @category  PHP
- * @package   GoSave\Banner
- * @author    https://gosave.com.sg
- * @copyright 2023 Copyright GoSave Pvt Ltd, https://gosave.com.sg/
- * @license   https://gosave.com.sg/ Private
+ * @package   Gosave\Banner
+ * @author    https://Gosave.com.sg
+ * @copyright 2023 Copyright Gosave Pvt Ltd, https://Gosave.com.sg/
+ * @license   https://Gosave.com.sg/ Private
  */
 
-namespace GoSave\Banner\Ui\DataProvider\Banner;
+namespace Gosave\Banner\Ui\DataProvider\Banner;
 
-use GoSave\Banner\Model\ResourceModel\Banner\CollectionFactory;
+use Gosave\Banner\Model\ResourceModel\Banner\CollectionFactory;
 use Magento\Ui\DataProvider\AbstractDataProvider;
 
 /**
  * Class Grid
- * GoSave\Banner\Ui\DataProvider\Banner
+ * Gosave\Banner\Ui\DataProvider\Banner
  */
 class Grid extends AbstractDataProvider
 {
     /**
-     * @var \GoSave\Banner\Model\ResourceModel\Banner\Collection
+     * @var \Gosave\Banner\Model\ResourceModel\Banner\Collection
      */
     protected $collection;
 

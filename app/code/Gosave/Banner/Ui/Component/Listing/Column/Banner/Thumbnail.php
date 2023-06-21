@@ -2,25 +2,25 @@
 
 declare(strict_types=1);
 /**
- * GoSave_Banner
- * 
+ * Gosave_Banner
+ *
  * PHP Version 8.x
  *
  * @category  PHP
- * @package   GoSave\Banner
- * @author    https://gosave.com.sg
- * @copyright 2023 Copyright GoSave Pvt Ltd, https://gosave.com.sg/
- * @license   https://gosave.com.sg/ Private
+ * @package   Gosave\Banner
+ * @author    https://Gosave.com.sg
+ * @copyright 2023 Copyright Gosave Pvt Ltd, https://Gosave.com.sg/
+ * @license   https://Gosave.com.sg/ Private
  */
 
-namespace GoSave\Banner\Ui\Component\Listing\Column\Banner;
+namespace Gosave\Banner\Ui\Component\Listing\Column\Banner;
 
 use Magento\Ui\Component\Listing\Columns\Column;
 use Magento\Store\Model\StoreManagerInterface;
 use Magento\Framework\View\Element\UiComponentFactory;
 use Magento\Framework\View\Element\UiComponent\ContextInterface;
 use Magento\Framework\UrlInterface;
-use GoSave\Banner\Model\ImageUploader;
+use Gosave\Banner\Model\ImageUploader;
 
 class Thumbnail extends Column
 {
@@ -71,7 +71,7 @@ class Thumbnail extends Column
      * Function to retrieve image URL by given image name
      *
      * @param string $image
-     * 
+     *
      * @return string
      */
     private function getImageUrl($image)

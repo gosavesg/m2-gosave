@@ -1,16 +1,16 @@
 <?xml version="1.0"?>
 <!--
 /**
- * GoSave_Banner
+ * Gosave_Banner
  *
  * @category  XML
- * @package   GoSave\Banner
- * @author    https://gosave.com.sg
- * @copyright 2023 Copyright GoSave Pvt Ltd, https://gosave.com.sg/
- * @license   https://gosave.com.sg/ Private
+ * @package   Gosave\Banner
+ * @author    https://Gosave.com.sg
+ * @copyright 2023 Copyright Gosave Pvt Ltd, https://Gosave.com.sg/
+ * @license   https://Gosave.com.sg/ Private
  */
 -->
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
-    <preference for="GoSave\Banner\Api\BannerRepositoryInterface"
-                type="GoSave\Banner\Model\BannerRepository" />
+    <preference for="Gosave\Banner\Api\BannerRepositoryInterface"
+                type="Gosave\Banner\Model\BannerRepository" />
 </config>

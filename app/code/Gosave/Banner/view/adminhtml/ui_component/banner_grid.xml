@@ -1,13 +1,13 @@
 <?xml version="1.0" ?>
 <!--
 /**
- * GoSave_Banner
+ * Gosave_Banner
  *
  * @category  XML
- * @package   GoSave\Banner
- * @author    https://gosave.com.sg
- * @copyright 2023 Copyright GoSave Pvt Ltd, https://gosave.com.sg/
- * @license   https://gosave.com.sg/ Private
+ * @package   Gosave\Banner
+ * @author    https://Gosave.com.sg
+ * @copyright 2023 Copyright Gosave Pvt Ltd, https://Gosave.com.sg/
+ * @license   https://Gosave.com.sg/ Private
  */
 -->
 <listing xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Ui:etc/ui_configuration.xsd">
@@ -28,7 +28,7 @@
     </argument>
     <dataSource name="banner_grid_data_source">
         <argument name="dataProvider" xsi:type="configurableObject">
-            <argument name="class" xsi:type="string">GoSave\Banner\Ui\DataProvider\Banner\Grid</argument>
+            <argument name="class" xsi:type="string">Gosave\Banner\Ui\DataProvider\Banner\Grid</argument>
             <argument name="name" xsi:type="string">banner_grid_data_source</argument>
             <argument name="primaryFieldName" xsi:type="string">id</argument>
             <argument name="requestFieldName" xsi:type="string">id</argument>
@@ -96,12 +96,12 @@
                 </item>
             </argument>
         </column>
-        <column name="image" class="GoSave\Banner\Ui\Component\Listing\Column\Banner\Thumbnail" component="Magento_Ui/js/grid/columns/thumbnail">
+        <column name="image" class="Gosave\Banner\Ui\Component\Listing\Column\Banner\Thumbnail" component="Magento_Ui/js/grid/columns/thumbnail">
             <settings>
                 <label translate="true">Banner Image</label>
                 <sortable>false</sortable>
             </settings>
-        </column>          
+        </column>
         <column name="url">
             <argument name="data" xsi:type="array">
                 <item name="config" xsi:type="array">
@@ -109,7 +109,7 @@
                     <item name="label" xsi:type="string" translate="true">Banner URL</item>
                 </item>
             </argument>
-        </column>        
+        </column>
         <column name="is_active">
             <argument name="data" xsi:type="array">
                 <item name="options" xsi:type="object">
@@ -129,7 +129,7 @@
                     <item name="label" xsi:type="string" translate="true">Position</item>
                 </item>
             </argument>
-        </column>         
+        </column>
         <column name="created_at" class="Magento\Ui\Component\Listing\Columns\Date">
             <argument name="data" xsi:type="array">
                 <item name="config" xsi:type="array">
@@ -150,7 +150,7 @@
                 </item>
             </argument>
         </column>
-        <actionsColumn name="actions" class="GoSave\Banner\Ui\Component\Listing\Column\Banner\Action">
+        <actionsColumn name="actions" class="Gosave\Banner\Ui\Component\Listing\Column\Banner\Action">
             <argument name="data" xsi:type="array">
                 <item name="config" xsi:type="array">
                     <item name="resizeEnabled" xsi:type="boolean">false</item>

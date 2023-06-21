@@ -2,26 +2,26 @@
 
 declare(strict_types=1);
 /**
- * GoSave_Banner
- * 
+ * Gosave_Banner
+ *
  * PHP Version 8.x
  *
  * @category  PHP
- * @package   GoSave\Banner
- * @author    https://gosave.com.sg
- * @copyright 2023 Copyright GoSave Pvt Ltd, https://gosave.com.sg/
- * @license   https://gosave.com.sg/ Private
+ * @package   Gosave\Banner
+ * @author    https://Gosave.com.sg
+ * @copyright 2023 Copyright Gosave Pvt Ltd, https://Gosave.com.sg/
+ * @license   https://Gosave.com.sg/ Private
  */
 
-namespace GoSave\Banner\Model\ResourceModel\Banner;
+namespace Gosave\Banner\Model\ResourceModel\Banner;
 
 use Magento\Framework\Model\ResourceModel\Db\Collection\AbstractCollection;
-use GoSave\Banner\Model\Banner;
-use GoSave\Banner\Model\ResourceModel\Banner as ResourceModel;
+use Gosave\Banner\Model\Banner;
+use Gosave\Banner\Model\ResourceModel\Banner as ResourceModel;
 
 /**
  * Class Collection
- * GoSave\Banner\Model\ResourceModel\Banner
+ * Gosave\Banner\Model\ResourceModel\Banner
  */
 class Collection extends AbstractCollection
 {

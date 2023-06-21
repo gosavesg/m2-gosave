@@ -1,13 +1,13 @@
 <?xml version="1.0" ?>
 <!--
 /**
- * GoSave_Banner
+ * Gosave_Banner
  *
  * @category  XML
- * @package   GoSave\Banner
- * @author    https://gosave.com.sg
- * @copyright 2023 Copyright GoSave Pvt Ltd, https://gosave.com.sg/
- * @license   https://gosave.com.sg/ Private
+ * @package   Gosave\Banner
+ * @author    https://Gosave.com.sg
+ * @copyright 2023 Copyright Gosave Pvt Ltd, https://Gosave.com.sg/
+ * @license   https://Gosave.com.sg/ Private
  */
 -->
 <form xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Ui:etc/ui_configuration.xsd">
@@ -24,9 +24,9 @@
     </argument>
     <settings>
         <buttons>
-            <button name="save_and_continue" class="GoSave\Banner\Block\Adminhtml\Edit\SaveAndContinueButton"/>
-            <button name="reset" class="GoSave\Banner\Block\Adminhtml\Edit\ResetButton"/>
-            <button name="delete" class="GoSave\Banner\Block\Adminhtml\Edit\DeleteButton"/>
+            <button name="save_and_continue" class="Gosave\Banner\Block\Adminhtml\Edit\SaveAndContinueButton"/>
+            <button name="reset" class="Gosave\Banner\Block\Adminhtml\Edit\ResetButton"/>
+            <button name="delete" class="Gosave\Banner\Block\Adminhtml\Edit\DeleteButton"/>
             <button name="save">
                 <url path="*/*/save"/>
                 <class>save primary</class>
@@ -51,7 +51,7 @@
             </item>
         </argument>
         <argument name="dataProvider" xsi:type="configurableObject">
-            <argument name="class" xsi:type="string">GoSave\Banner\Ui\DataProvider\Banner\Edit</argument>
+            <argument name="class" xsi:type="string">Gosave\Banner\Ui\DataProvider\Banner\Edit</argument>
             <argument name="name" xsi:type="string">banner_form_data_source</argument>
             <argument name="primaryFieldName" xsi:type="string">id</argument>
             <argument name="requestFieldName" xsi:type="string">id</argument>
@@ -91,7 +91,7 @@
                     <item name="visible" xsi:type="boolean">true</item>
                     <item name="formElement" xsi:type="string">fileUploader</item>
                     <item name="elementTmpl" xsi:type="string">ui/form/element/uploader/uploader</item>
-                    <item name="previewTmpl" xsi:type="string">GoSave_Banner/image-preview</item>
+                    <item name="previewTmpl" xsi:type="string">Gosave_Banner/image-preview</item>
                     <item name="required" xsi:type="boolean">false</item>
                     <item name="sortOrder" xsi:type="number">20</item>
                     <item name="uploaderConfig" xsi:type="array">
@@ -99,7 +99,7 @@
                     </item>
                 </item>
             </argument>
-        </field>        
+        </field>
         <field name="url" formElement="input">
             <argument name="data" xsi:type="array">
                 <item name="config" xsi:type="array">

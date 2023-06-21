@@ -2,29 +2,29 @@
 
 declare(strict_types=1);
 /**
- * GoSave_Banner
- * 
+ * Gosave_Banner
+ *
  * PHP Version 8.x
  *
  * @category  PHP
- * @package   GoSave\Banner
- * @author    https://gosave.com.sg
- * @copyright 2023 Copyright GoSave Pvt Ltd, https://gosave.com.sg/
- * @license   https://gosave.com.sg/ Private
+ * @package   Gosave\Banner
+ * @author    https://Gosave.com.sg
+ * @copyright 2023 Copyright Gosave Pvt Ltd, https://Gosave.com.sg/
+ * @license   https://Gosave.com.sg/ Private
  */
 
-namespace GoSave\Banner\Ui\DataProvider\Banner;
+namespace Gosave\Banner\Ui\DataProvider\Banner;
 
 use Magento\Ui\DataProvider\AbstractDataProvider;
-use GoSave\Banner\Model\ResourceModel\Banner\CollectionFactory;
+use Gosave\Banner\Model\ResourceModel\Banner\CollectionFactory;
 use Magento\Framework\App\Request\DataPersistorInterface;
 use Magento\Store\Model\StoreManagerInterface;
-use GoSave\Banner\Model\ImageUploader;
+use Gosave\Banner\Model\ImageUploader;
 use Magento\Framework\UrlInterface;
 
 /**
  * Class Edit
- * GoSave\Banner\Ui\DataProvider\Banner
+ * Gosave\Banner\Ui\DataProvider\Banner
  */
 class Edit extends AbstractDataProvider
 {
@@ -34,7 +34,7 @@ class Edit extends AbstractDataProvider
     protected $loadedData;
 
     /**
-     * @var \GoSave\Banner\Model\ResourceModel\SourceEndpoint\Collection
+     * @var \Gosave\Banner\Model\ResourceModel\SourceEndpoint\Collection
      */
     protected $collection;
 
@@ -118,7 +118,7 @@ class Edit extends AbstractDataProvider
      * Function to retrieve image URL by given image name
      *
      * @param string $image
-     * 
+     *
      * @return string
      */
     private function getImageUrl($image)

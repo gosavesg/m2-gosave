@@ -2,24 +2,24 @@
 
 declare(strict_types=1);
 /**
- * GoSave_Banner
- * 
+ * Gosave_Banner
+ *
  * PHP Version 8.x
  *
  * @category  PHP
- * @package   GoSave\Banner
- * @author    https://gosave.com.sg
- * @copyright 2023 Copyright GoSave Pvt Ltd, https://gosave.com.sg/
- * @license   https://gosave.com.sg/ Private
+ * @package   Gosave\Banner
+ * @author    https://Gosave.com.sg
+ * @copyright 2023 Copyright Gosave Pvt Ltd, https://Gosave.com.sg/
+ * @license   https://Gosave.com.sg/ Private
  */
 
-namespace GoSave\Banner\Model\ResourceModel;
+namespace Gosave\Banner\Model\ResourceModel;
 
 use Magento\Framework\Model\ResourceModel\Db\AbstractDb;
 
 /**
  * Class Banner
- * GoSave\Banner\Model\ResourceModel
+ * Gosave\Banner\Model\ResourceModel
  */
 class Banner extends AbstractDb
 {
@@ -31,6 +31,6 @@ class Banner extends AbstractDb
      */
     protected function _construct()
     {
-        $this->_init('gs_banner', 'id');
+        $this->_init('banners', 'id');
     } //end _construct()
 }//end class

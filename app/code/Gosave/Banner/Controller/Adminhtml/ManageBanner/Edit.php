@@ -2,27 +2,27 @@
 
 declare(strict_types=1);
 /**
- * GoSave_Banner
- * 
+ * Gosave_Banner
+ *
  * PHP Version 8.x
  *
  * @category  PHP
- * @package   GoSave\Banner
- * @author    https://gosave.com.sg
- * @copyright 2023 Copyright GoSave Pvt Ltd, https://gosave.com.sg/
- * @license   https://gosave.com.sg/ Private
+ * @package   Gosave\Banner
+ * @author    https://Gosave.com.sg
+ * @copyright 2023 Copyright Gosave Pvt Ltd, https://Gosave.com.sg/
+ * @license   https://Gosave.com.sg/ Private
  */
 
-namespace GoSave\Banner\Controller\Adminhtml\ManageBanner;
+namespace Gosave\Banner\Controller\Adminhtml\ManageBanner;
 
 use Magento\Backend\App\Action\Context;
 use Magento\Framework\View\Result\PageFactory;
 use Magento\Backend\App\Action as AppAction;
-use GoSave\Banner\Api\BannerRepositoryInterface as BannerRepository;
+use Gosave\Banner\Api\BannerRepositoryInterface as BannerRepository;
 
 /**
  * Class Edit
- * GoSave\Banner\Controller\Adminhtml\ManageBanner
+ * Gosave\Banner\Controller\Adminhtml\ManageBanner
  */
 class Edit extends AppAction
 {
@@ -77,7 +77,7 @@ class Edit extends AppAction
         try {
             /** @var \Magento\Backend\Model\View\Result\Page $resultPage */
             $resultPage = $this->resultPageFactory->create();
-            $resultPage->setActiveMenu('GoSave_Banner::gsmenu');
+            $resultPage->setActiveMenu('Gosave_Banner::gsmenu');
             $resultPage->getConfig()->getTitle()->prepend(__('Banner'));
             $resultPage->getConfig()->getTitle()->prepend(__('Edit Banner - %1', $model->getName()));
         } catch (\Exception $e) {

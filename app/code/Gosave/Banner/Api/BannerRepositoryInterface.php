@@ -1,24 +1,24 @@
 <?php
 
 /**
- * GoSave_Banner
- * 
+ * Gosave_Banner
+ *
  * PHP Version 8.x
  *
  * @category  PHP
- * @package   GoSave\Banner
- * @author    https://gosave.com.sg
- * @copyright 2023 Copyright GoSave Pvt Ltd, https://gosave.com.sg/
- * @license   https://gosave.com.sg/ Private
+ * @package   Gosave\Banner
+ * @author    https://Gosave.com.sg
+ * @copyright 2023 Copyright Gosave Pvt Ltd, https://Gosave.com.sg/
+ * @license   https://Gosave.com.sg/ Private
  */
 
-namespace GoSave\Banner\Api;
+namespace Gosave\Banner\Api;
 
-use GoSave\Banner\Model\Banner;
+use Gosave\Banner\Model\Banner;
 
 /**
  * Interface BannerRepositoryInterface
- * GoSave\Banner\Api
+ * Gosave\Banner\Api
  */
 interface BannerRepositoryInterface
 {

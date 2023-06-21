@@ -2,18 +2,18 @@
 
 declare(strict_types=1);
 /**
- * GoSave_Banner
+ * Gosave_Banner
  *
  * @category  XML
- * @package   GoSave\Banner
- * @author    https://gosave.com.sg
- * @copyright 2023 Copyright GoSave Pvt Ltd, https://gosave.com.sg/
- * @license   https://gosave.com.sg/ Private
+ * @package   Gosave\Banner
+ * @author    https://Gosave.com.sg
+ * @copyright 2023 Copyright Gosave Pvt Ltd, https://Gosave.com.sg/
+ * @license   https://Gosave.com.sg/ Private
  */
 
-namespace GoSave\Banner\Controller\Adminhtml\ManageBanner;
+namespace Gosave\Banner\Controller\Adminhtml\ManageBanner;
 
-use GoSave\Banner\Model\ImageUploader;
+use Gosave\Banner\Model\ImageUploader;
 use Magento\Backend\App\Action;
 use Magento\Backend\App\Action\Context;
 use Magento\Framework\Controller\ResultFactory;
