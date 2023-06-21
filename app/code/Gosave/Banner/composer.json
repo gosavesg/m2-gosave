@@ -1,5 +1,5 @@
 {
-  "name": "gosave/banner",
+  "name": "gosave/module-banner",
   "description": "Banner Management",
   "require": {
     "php": "~8.1"
