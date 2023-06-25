@@ -1,0 +1,20 @@
+<?xml version="1.0" ?>
+<!--
+/**
+ * Gosave_Banner
+ *
+ * @category  XML
+ * @package   Gosave\Banner
+ * @author    https://Gosave.com.sg
+ * @copyright 2023 Copyright Gosave Pvt Ltd, https://Gosave.com.sg/
+ * @license   https://Gosave.com.sg/ Private
+ */
+-->
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <update handle="styles"/>
+    <body>
+        <referenceContainer name="content">
+            <uiComponent name="banner_grid"/>
+        </referenceContainer>
+    </body>
+</page>

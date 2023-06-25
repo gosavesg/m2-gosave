@@ -1,0 +1,17 @@
+type Banner {
+    id: Int!
+    title: String!
+    image: String!
+}
+
+type Product {
+    id: Int!
+    name: String!
+    price: Float!
+    category: String!
+}
+
+type Query {
+    getBanners: [Banner] @resolver(class: "Gosave\\Homepage\\Model\\Resolver\\BannerResolver")
+    getCategoryProducts: [Product] @resolver(class: "Gosave\\Homepage\\Model\\Resolver\\CategoryProductsResolver")
+}

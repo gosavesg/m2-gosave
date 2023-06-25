@@ -1,0 +1,173 @@
+<?xml version="1.0" ?>
+<!--
+/**
+ * Gosave_Banner
+ *
+ * @category  XML
+ * @package   Gosave\Banner
+ * @author    https://Gosave.com.sg
+ * @copyright 2023 Copyright Gosave Pvt Ltd, https://Gosave.com.sg/
+ * @license   https://Gosave.com.sg/ Private
+ */
+-->
+<form xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Ui:etc/ui_configuration.xsd">
+    <argument name="data" xsi:type="array">
+        <item name="js_config" xsi:type="array">
+            <item name="provider" xsi:type="string">banner_form.banner_form_data_source</item>
+        </item>
+        <item name="label" xsi:type="string" translate="true">Banner Management</item>
+        <item name="config" xsi:type="array">
+            <item name="dataScope" xsi:type="string">data</item>
+            <item name="namespace" xsi:type="string">banner_form</item>
+        </item>
+        <item name="template" xsi:type="string">templates/form/collapsible</item>
+    </argument>
+    <settings>
+        <buttons>
+            <button name="save_and_continue" class="Gosave\Banner\Block\Adminhtml\Edit\SaveAndContinueButton"/>
+            <button name="reset" class="Gosave\Banner\Block\Adminhtml\Edit\ResetButton"/>
+            <button name="delete" class="Gosave\Banner\Block\Adminhtml\Edit\DeleteButton"/>
+            <button name="save">
+                <url path="*/*/save"/>
+                <class>save primary</class>
+                <label translate="true">Save</label>
+            </button>
+            <button name="back">
+                <url path="*/*/"/>
+                <class>back</class>
+                <label translate="true">Back</label>
+            </button>
+        </buttons>
+        <namespace>banner_form</namespace>
+        <dataScope>data</dataScope>
+        <deps>
+            <dep>banner_form.banner_form_data_source</dep>
+        </deps>
+    </settings>
+    <dataSource name="banner_form_data_source">
+        <argument name="data" xsi:type="array">
+            <item name="js_config" xsi:type="array">
+                <item name="component" xsi:type="string">Magento_Ui/js/form/provider</item>
+            </item>
+        </argument>
+        <argument name="dataProvider" xsi:type="configurableObject">
+            <argument name="class" xsi:type="string">Gosave\Banner\Ui\DataProvider\Banner\Edit</argument>
+            <argument name="name" xsi:type="string">banner_form_data_source</argument>
+            <argument name="primaryFieldName" xsi:type="string">id</argument>
+            <argument name="requestFieldName" xsi:type="string">id</argument>
+        </argument>
+        <settings>
+            <submitUrl path="banner/managebanner/save"/>
+        </settings>
+    </dataSource>
+    <fieldset name="banner_information" sortOrder="10">
+        <settings>
+            <collapsible>true</collapsible>
+            <opened>true</opened>
+            <label translate="true">Banner Information</label>
+        </settings>
+        <field name="name" formElement="input" sortOrder="10">
+            <argument name="data" xsi:type="array">
+                <item name="config" xsi:type="array">
+                    <item name="fit" xsi:type="boolean">false</item>
+                </item>
+            </argument>
+            <settings>
+                <showFallbackReset>false</showFallbackReset>
+                <dataType>text</dataType>
+                <label>Banner Name</label>
+                <dataScope>name</dataScope>
+                <validation>
+                    <rule name="required-entry" xsi:type="boolean">true</rule>
+                </validation>
+            </settings>
+        </field>
+        <field name="image">
+            <argument name="data" xsi:type="array">
+                <item name="config" xsi:type="array">
+                    <item name="dataType" xsi:type="string">string</item>
+                    <item name="source" xsi:type="string">banner_data</item>
+                    <item name="label" xsi:type="string" translate="true">Banner Image</item>
+                    <item name="visible" xsi:type="boolean">true</item>
+                    <item name="formElement" xsi:type="string">fileUploader</item>
+                    <item name="elementTmpl" xsi:type="string">ui/form/element/uploader/uploader</item>
+                    <item name="previewTmpl" xsi:type="string">Gosave_Banner/image-preview</item>
+                    <item name="required" xsi:type="boolean">false</item>
+                    <item name="sortOrder" xsi:type="number">20</item>
+                    <item name="uploaderConfig" xsi:type="array">
+                        <item name="url" xsi:type="url" path="banner/managebanner/uploadimage"/>
+                    </item>
+                </item>
+            </argument>
+        </field>
+        <field name="url" formElement="input">
+            <argument name="data" xsi:type="array">
+                <item name="config" xsi:type="array">
+                    <item name="source" xsi:type="string">banner_data</item>
+                </item>
+            </argument>
+            <settings>
+                <validation>
+                    <rule name="required-entry" xsi:type="boolean">false</rule>
+                </validation>
+                <dataType>text</dataType>
+                <label translate="true">Banner Url</label>
+                <visible>true</visible>
+                <dataScope>url</dataScope>
+            </settings>
+        </field>
+        <field name="position" formElement="input">
+            <argument name="data" xsi:type="array">
+                <item name="config" xsi:type="array">
+                    <item name="source" xsi:type="string">banner_data</item>
+                </item>
+            </argument>
+            <settings>
+                <validation>
+                    <rule name="required-entry" xsi:type="boolean">true</rule>
+                </validation>
+                <dataType>text</dataType>
+                <label translate="true">Position</label>
+                <visible>true</visible>
+                <dataScope>position</dataScope>
+            </settings>
+        </field>
+        <field name="is_active" formElement="select">
+            <argument name="data" xsi:type="array">
+                <item name="config" xsi:type="array">
+                    <item name="fieldGroup" xsi:type="string">bool</item>
+                    <item name="value" xsi:type="string">0</item>
+                    <item name="source" xsi:type="string">banner_data</item>
+                </item>
+            </argument>
+            <settings>
+                <validation>
+                    <rule name="required-entry" xsi:type="boolean">true</rule>
+                </validation>
+                <dataType>text</dataType>
+                <label translate="true">Is Active</label>
+                <dataScope>is_active</dataScope>
+            </settings>
+            <formElements>
+                <select>
+                    <settings>
+                        <options>
+                            <option name="0" xsi:type="array">
+                                <item name="value" xsi:type="null"/>
+                                <item name="label" xsi:type="string" translate="true">Please Select</item>
+                            </option>
+                            <option name="1" xsi:type="array">
+                                <item name="value" xsi:type="string">1</item>
+                                <item name="label" xsi:type="string" translate="true">Yes</item>
+                            </option>
+                            <option name="2" xsi:type="array">
+                                <item name="value" xsi:type="string">0</item>
+                                <item name="label" xsi:type="string" translate="true">No</item>
+                            </option>
+                        </options>
+                    </settings>
+                </select>
+            </formElements>
+        </field>
+    </fieldset>
+</form>

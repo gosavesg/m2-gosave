@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <type name="Magento\Framework\GraphQl\Query\ResolverInterface">
+        <arguments>
+            <argument name="resolvers" xsi:type="array">
+                <item name="Gosave\Homepage\Model\Resolver\BannerResolver" xsi:type="object">Gosave\Homepage\Model\Resolver\BannerResolver</item>
+                <item name="Gosave\Homepage\Model\Resolver\CategoryProductsResolver" xsi:type="object">Gosave\Homepage\Model\Resolver\CategoryProductsResolver</item>
+            </argument>
+        </arguments>
+    </type>
+
+    <virtualType name="Gosave\Homepage\Model\Resolver\BannerResolver" type="Gosave\Homepage\Model\Resolver\BannerResolver">
+        <arguments>
+            <argument name="bannerRepository" xsi:type="object">Gosave\Banner\Model\BannerRepository</argument>
+        </arguments>
+    </virtualType>
+</config>
